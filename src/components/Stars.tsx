@@ -4,15 +4,13 @@ const Stars = ({count = 0}: {count: number}) => {
 
     const arrStars = [];
 
-    if (count < 0 || count > 5) {
+    if (count < 0 || count > 5 || typeof count != 'number') {
         return null;
     }
 
     for (let i = 0; i < count; i++ ) { 
         arrStars.push(i);
     }
-
-    console.log(arrStars);
 
     return(
         <>
