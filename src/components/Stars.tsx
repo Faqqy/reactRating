@@ -16,9 +16,13 @@ const Stars = ({count = 0}: {count: number}) => {
 
     return(
         <>
-          {arrStars.map((e) => (
-                <Star key={e} />
-          ))}  
+          
+            <ul className="card-body-stars u-clearfix">
+                {arrStars.map((e) => (
+                    <Star key={e} />
+                ))} 
+            </ul>
+           
         </>
     )
 }
